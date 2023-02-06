@@ -1,4 +1,64 @@
 /* Color Scheme = #30362F, #625834, #D3F9B5, #DDFC74, #EA9010 */
 
-*{background-color: aquamarine;
+
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#625834;
+}
+
+nav{
+    background: #30362F;
+    height: 100px;
+    width: 100%;
+   }
+
+label.logo{
+    color: 625834;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+nav ul{
+    float: right;
+    margin-right: 0px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    background-color: #30362F;
+    border-width: 0;
+}
+
+nav ul li a{
+    color: #625834;
+    background-color:transparent;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active, a:hover{
+    background: #DDFC74;
+
+}
+/*Setting images at the head of topics to desired sizes and to float inside card elements*/
+.topic-graphic{
+    float: left;
+    max-height: 25%;
+
+}
+
+/*setting attributes for sections of the site designated as 'card'. These properties will make the site more responsive*/
+.card{
+    display:flexbox;
+    float: left;
+    justify-content: left;
 }
