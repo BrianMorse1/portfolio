@@ -55,7 +55,7 @@ a:hover{
 
 .container{
 display: block;
-width: 100%;
+width: auto;
 height: auto;
 margin: 15px 15px;
 column-count: 1;
@@ -96,6 +96,19 @@ p{
     padding: 0 5px;
 }
 
+/*ensures image for sample project 1 will be larger than the image for sample project 2*/
+#sample-project-1{
+    min-width: 50%;
+    min-height: 50%;
+    border-radius: 10px;
+}
+
+#sample-project-2{
+    max-width: 45%;
+    max-height: 45%;
+    border-radius: 10px;
+}
+
 /*settings to make cards shrink and stack to fit screen size and makes navigation bar responsive*/
 
 
@@ -112,6 +125,17 @@ p{
         background-color: #30362F;
         border-width: 0;
         padding: 20px 0px 20px 20px;
+        }
+
+        #sample-project-1{
+            min-width: 40%;
+            min-height: 40%;
+            border-radius: 10px;
+        }
+        
+        #sample-project-2{
+            max-width: 35%;
+            max-height: 35%;
         }
 }
 
@@ -149,4 +173,14 @@ p{
         font-weight: bold;
         background-color: transparent;
     }
+    #sample-project-1{
+        min-width: 25%;
+        min-height: 25%;
+    }
+
+    #sample-project-2{
+        max-width: 20%;
+        max-height: 20%;
+    }
 }
+
