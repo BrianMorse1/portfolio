@@ -23,6 +23,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    border-bottom: 5px solid #fdb347;
 }
 nav li{
     display: inline-block;
@@ -35,22 +36,46 @@ main {
 }
 
 .card-img {
-  height: 15%;
-  width: 15%;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  height: 30%;
+  width: 40%;
+  border-radius: 15%;
 }
 
 .card {
-  width: 40%;
-  height: 40%;
+  width: 20%;
   border-style: outset;
   border-color: #cccccc;
   border-radius: 20px;
   color: #FFFACD; 
   margin: 25px;
+  object-fit: cover;
+  margin: 3%;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  transition: width 0.3s, height 0.3s;
 }
+/* Hover functionality not working yet. 
+
+.card:hover {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40%;
+  height: auto;
+}
+*/
 
 .footer {
   margin: 25px;
+  color: #FFFACD;
+}
+
+#project-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
 }
