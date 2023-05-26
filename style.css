@@ -39,6 +39,7 @@ main {
   height: 30%;
   width: 40%;
   border-radius: 15%;
+
 }
 
 .card {
@@ -52,20 +53,19 @@ main {
   margin: 3%;
   overflow: hidden;
   text-overflow: ellipsis; 
-  transition: width 0.3s, height 0.3s;
+  transition: transform .3s ease-in-out;
+  cursor: pointer;
 }
-/* Hover functionality not working yet. 
 
-.card:hover {
+
+.card.active {
   position: fixed;
-  top: 50%;
+  top: 35%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 40%;
-  height: auto;
+  transform: translate(-50%, -50%) scale(2);
+  z-index: 9999;  
+  font-size: 14px;
 }
-*/
 
 .footer {
   margin: 25px;
@@ -79,3 +79,8 @@ main {
   position: relative;
   z-index: 1;
 }
+
+#project-gallery.freeze{
+  position: fixed;
+}
+

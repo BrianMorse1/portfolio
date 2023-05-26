@@ -34,3 +34,15 @@ This project uses the MIT license.
 
 ## Questions
 For any quesitions regarding this project, please see my Github at github.com/BrianMorse1 or email me at Brian.P.Morse@gmail.com. 
+
+
+
+
+
+
+
+Dark Green: #006400
+Forest Green: #228B22
+Green: #008000
+Lime Green: #00FF00
+Pale Green: #98FB98
